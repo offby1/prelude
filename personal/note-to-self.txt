@@ -1,0 +1,3 @@
+I ran a "preludized" emacs alongside my normal one by typing this at a command prompt:
+
+$ open ~/git-repositories/3rd-party/emacs/nextstep/Emacs.app --new --args -Q --load=/Users/not-workme/git-repositories/3rd-party/prelude/init.el

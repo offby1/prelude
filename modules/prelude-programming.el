@@ -51,11 +51,6 @@
 ;;
 ;; (the final optional t sets the *append* argument)
 
-;; smart curly braces
-(sp-pair "{" nil :post-handlers
-         '(((lambda (&rest _ignored)
-              (crux-smart-open-line-above)) "RET")))
-
 ;; enlist a more liberal guru
 (setq guru-warn-only t)
 
@@ -67,7 +62,6 @@
   (when prelude-guru
     (guru-mode +1)
     (diminish 'guru-mode))
-  (smartparens-mode +1)
   (prelude-enable-whitespace)
   (prelude-local-comment-auto-fill))
 

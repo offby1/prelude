@@ -143,11 +143,5 @@ With a prefix ARG updates all installed packages."
                                      (epl-installed-packages))))
     (message "Update finished. Restart Emacs to complete the process.")))
 
-(defun prelude-wrap-with (s)
-  "Create a wrapper function for smartparens using S."
-  `(lambda (&optional arg)
-     (interactive "P")
-     (sp-wrap-with-pair ,s)))
-
 (provide 'prelude-core)
 ;;; prelude-core.el ends here

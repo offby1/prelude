@@ -86,7 +86,6 @@
     move-text
     nlinum
     operate-on-number
-    smartparens
     smartrep
     super-save
     undo-tree

@@ -31,7 +31,7 @@
 ;;; Code:
 
 (prelude-require-packages '(auctex cdlatex))
-(require 'smartparens-latex)
+
 ;; for case
 (require 'cl-lib)
 
@@ -75,7 +75,6 @@
   "Default Prelude hook for `LaTeX-mode'."
   (turn-on-auto-fill)
   (abbrev-mode +1)
-  (smartparens-mode +1)
   (cl-case prelude-latex-fast-math-entry
     (LaTeX-math-mode (LaTeX-math-mode 1))
     (cdlatex (turn-on-cdlatex))))

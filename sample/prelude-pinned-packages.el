@@ -109,7 +109,6 @@
         (slim-mode . "melpa-stable")
         (slime . "melpa-stable")
         (smart-mode-line . "melpa-stable")
-        (smartparens . "melpa-stable")
         (smartrep . "melpa-stable")
         (smex . "melpa-stable")
         (spinner . "gnu")

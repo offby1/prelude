@@ -56,9 +56,6 @@ Here are some of the essential 3rd party packages that Prelude adds to Emacs:
   (navigate quickly through different versions of one file)
 * `nlinum`
   (line numbers in your buffers)
-* [smartparens](https://github.com/Fuco1/smartparens)
-  (powerful package for dealing with expressions and matched
-  delimiters in programming languages)
 * [super-save](https://github.com/bbatsov/super-save)
   (auto-save buffers when moving around)
 * [which-key](https://github.com/justbur/emacs-which-key)

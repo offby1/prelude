@@ -96,20 +96,9 @@ Start `ielm' if it's not already running."
 (with-eval-after-load "eldoc"
   (diminish 'eldoc-mode))
 
-(with-eval-after-load "ielm"
-  (define-key ielm-map (kbd "M-(") (prelude-wrap-with "("))
-  (define-key ielm-map (kbd "M-\"") (prelude-wrap-with "\"")))
-
 ;; enable elisp-slime-nav-mode
 (dolist (hook '(emacs-lisp-mode-hook ielm-mode-hook))
   (add-hook hook 'elisp-slime-nav-mode))
-
-(defun conditionally-enable-smartparens-mode ()
-  "Enable `smartparens-mode' in the minibuffer, during `eval-expression'."
-  (if (eq this-command 'eval-expression)
-      (smartparens-mode 1)))
-
-(add-hook 'minibuffer-setup-hook 'conditionally-enable-smartparens-mode)
 
 (provide 'prelude-emacs-lisp)
 
